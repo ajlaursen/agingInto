@@ -2,95 +2,114 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Fundraising Site</title>
 		<link rel="stylesheet" href="styles.css" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
-		<!-- Header Section -->
-		<header>
-			<h1>Aging Into</h1>
-			<p>
-				A scholarship program for adolescents aging out of the foster
-				care program
-			</p>
-		</header>
+		<div class="body-bg">
+			<!-- Header Section -->
+			<header>
+				<img src="media/logo.png" alt="" class="header-image" />
+				<div class="container text-center heading-text">
+					<h3>
+						A scholarship program for adolescents aging out of the
+						foster care program
+					</h3>
+				</div>
+			</header>
 
-		<!-- Navigation Section -->
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html">Home</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
+			<!-- Navigation Section -->
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container">
+					<a class="navbar-brand text-info" href="index.html">Home</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="apply.html">Apply</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="donate.html"
+									>Donate</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">About</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Main Content Area -->
+			<div class="container video-wrapper">
+				<video class="video-container" autoplay>
+					<source src="media/Untitled.mp4" type="video/mp4" />
+				</video>
+			</div>
+
+			<section id="about" class="container text-center mission">
+				<h2>Mission Statement</h2>
+				<p class="lead">
+					To increase the the likelihood of foster children aging out
+					of the system to be successful in furthering their education
+					through college
+				</p>
+			</section>
+
+			<div class="container">
+				<div
+					id="carouselExampleAutoplaying"
+					class="carousel slide"
+					data-bs-ride="carousel"
 				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="apply.html">Apply</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="donate.html">Donate</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">About</a>
-						</li>
-						
-					</ul>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="media/pexels-emily-ranquist-1205651.jpg"
+								class="d-block w-50 carousel-img"
+								alt="..."
+							/>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="media/pexels-pixabay-159775.jpg"
+								class="d-block w-50 carousel-img"
+								alt="..."
+							/>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="media/pexels-stanley-morales-1454360.jpg"
+								class="d-block w-50 carousel-img"
+								alt="..."
+							/>
+						</div>
+					</div>
 				</div>
 			</div>
-		</nav>
-		<!-- Main Content Area -->
-<div class="container">
-		<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-inner">
-			  <div class="carousel-item active">
-				<img src="media/pexels-emily-ranquist-1205651.jpg" class="d-block w-50  carousel-img" alt="...">
-			  </div>
-			  <div class="carousel-item">
-				<img src="media/pexels-pixabay-159775.jpg" class="d-block w-50 carousel-img" alt="...">
-			  </div>
-			  <div class="carousel-item">
-				<img src="media/pexels-stanley-morales-1454360.jpg" class="d-block w-50 carousel-img" alt="...">
-			  </div>
-			</div>
-		  </div>
 		</div>
-			<!-- About Section -->
-			<section id="about">
-				<h2>About Us</h2>
-				<p>
-					Welcome to our fundraising campaign. Here, we aim to make a
-					positive impact...
-				</p>
-				<!-- Include information about your cause, achievements, etc. -->
-			</section>
 
-			
-
-			<!-- Contact Section -->
-			<section id="contact">
-				<h2>Contact Us</h2>
-				<p>
-					If you have any questions or inquiries, please feel free to
-					reach out to us...
-				</p>
-				<!-- Contact information like email, phone number, address, etc. -->
-			</section>
-		</main>
-
-		<!-- Footer Section -->
-		<footer>
-			<p>&copy; 2023 Your Fundraising Site</p>
-		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
